@@ -1,0 +1,454 @@
+﻿* {
+	font-size: inherit;
+	font-family: inherit;
+	line-height: inherit;
+	-webkit-tap-highlight-color: transparent;
+}
+
+body {
+	background: #fff;
+	margin: 0;
+	padding-top: 5rem;
+}
+
+html {
+	font-size: 17px;
+	font-family: 'Roboto', sans-serif;
+	line-height: 1.6;
+}
+
+small {
+	font-size: 0.85em;
+}
+
+header {
+	min-height: 5rem;
+	display: flex;
+	flex-flow: row;
+	align-items: center;
+	justify-content: center;
+	background-color: #fff;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1;
+	opacity: 0.9;
+	box-sizing: border-box;
+}
+
+.container {
+	box-sizing: border-box;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	width: 100%;
+	max-width: 1170px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+header .container {
+	display: flex;
+	flex-flow: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+header .logo img {
+	width: 200px;
+}
+
+.logo:focus {
+	outline: 0;
+	box-shadow: none;
+}
+
+a > img {
+	border: 0;
+}
+
+header nav {
+	display: flex;
+	flex-flow: row;
+	align-items: center;
+	justify-content: center;
+}
+
+header nav a {
+	margin: 1rem;
+	color: inherit;
+	text-decoration: none;
+}
+
+header nav .close {
+	display: none;
+	flex-flow: row;
+	align-items: center;
+	height: 4rem;
+	width: 100%;
+}
+
+header nav .close a {
+	display: block;
+	border: 1px solid;
+	border-radius: 5px;
+	width: 2.5rem;
+	font-size: 1.25rem;
+	text-align: center;
+	margin-left: calc(100% - 3.5rem);
+	cursor: pointer;
+}
+
+header .nav-trigger {
+	display: none;
+	border: 1px solid;
+	border-radius: 5px;
+	width: 2.5rem;
+	font-size: 1.25rem;
+	cursor: pointer;
+	text-align: center;
+}
+
+footer {
+	background-color: rgb(36, 41, 46);
+	color: #ccc;
+	min-height: 5rem;
+	display: flex;
+	flex-flow: row;
+	align-items: center;
+	justify-content: center;
+}
+
+footer nav {
+	display: flex;
+	flex-flow: row;
+	align-items: center;
+	justify-content: center;
+}
+
+footer nav a {
+	margin: 1rem;
+	color: inherit;
+	text-decoration: none;
+	line-height: 1rem;
+}
+
+.product {
+	height: 400px;
+	background-attachment: fixed;
+	background-image: url(../images/product-background.jpg);
+	background-position: center center;
+}
+
+.product > .bgoverlay {
+	display: flex;
+	flex-flow: row;
+	align-items: center;
+	justify-content: start;
+	background-color: transparent;
+    background-image: linear-gradient(90deg, #0072D2 0%, #00B6C3 100%);
+	height: 400px;
+	width: 100%;
+    opacity: 0.85;
+    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+}
+
+.product .product-logo {
+	width: 500px;
+	max-width: 100%;
+}
+
+.text-image {
+	display: flex;
+	flex-flow: row;
+	align-items: start;
+	justify-content: start;
+}
+
+ul {
+	padding-left: 1.2rem;
+}
+
+.text-image > div {
+	width: 50%;
+	box-sizing: border-box;
+		padding-top: 2rem;
+		padding-bottom: 2rem;
+}
+
+.text-image > div:first-child {
+	padding-right: 2rem;
+}
+
+.text-image > div:first-child > *:first-child {
+	margin-top: 0;
+}
+
+/*.text-image img {
+	width: 500px;
+	max-width: 100%;
+	margin-left: 2rem;
+	margin-right: 2rem;
+}*/
+
+.text-image img {
+	width: 500px;
+    max-width: 100%;
+    padding-left: 2rem;
+    -padding-right: 2rem;
+    box-sizing: border-box;
+}
+
+li {
+	margin-bottom: 0.5rem;
+}
+
+.text-highlighted {
+	background-color: transparent;
+    background-image: linear-gradient(90deg, #0072D2 0%, #00B6C3 100%);
+	color: #fff;
+}
+
+.shadow {
+	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+}
+
+.pricing-table {
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	justify-content: center;
+	padding-bottom: 2rem;
+}
+
+.pricing-table .plans {
+	display: flex;
+	flex-flow: row;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+}
+
+.pricing-table .plans > div {
+	background: #f7f7f7;
+	color: rgb(85,85,85);
+	width: calc(50% - 2rem);
+	margin-left: 1rem;
+	margin-right: 1rem;
+	-padding: 50px 2rem;
+	padding-top: 4rem;
+	padding-bottom: 4rem;
+	text-align: center;
+	box-sizing: border-box;
+}
+
+.pricing-table .plans .price-details {
+	display: flex;
+	flex-flow: row;
+	flex-wrap: wrap;
+	align-items: start;
+	justify-content: center;
+}
+
+.pricing-table .plans .currency {
+	font-size: 1.5rem;
+	line-height: 1;
+}
+
+.pricing-table .plans .price {
+	font-size: 65px;
+	line-height: 0.8;
+	font-weight: 700;
+}
+
+.pricing-table .plans .period {
+	width: 100%;
+}
+
+.pricing-table h2 {
+	font-size: 38px;
+	font-weight: normal;
+	margin: 0;
+	line-height: 1;
+	text-align: center;
+	margin-bottom: 1rem;
+}
+
+.pricing-table .info {
+	margin-top: 0rem;
+	margin-bottom: 3rem;
+}
+
+.pricing-table p {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+
+a.button {
+	background-color: rgb(255, 87, 25);
+	color: #fff;
+	text-decoration: none;
+	padding-bottom:15px;
+	padding-left:30px;
+	padding-right:30px;
+	padding-top:15px;
+	border-radius: 5px;
+	display: inline-flex;
+}
+
+.a {
+	display: inline-block;
+	text-decoration: none;
+	cursor: pointer;
+	line-height: inherit;
+	vertical-align: middle;
+	text-align: center;
+    cursor: pointer;
+}
+
+.a:after, .a:after {
+	content: '';
+	display: block;
+	overflow: hidden;
+	width: 0;
+	height: 2px;
+	background-color: currentColor;
+	transition: all 0.3s ease-out;
+	transition-property: width, left;
+	position: relative;
+    left: 50%;
+}
+
+header .a, header .a:hover {
+	color: #4042ff;
+}
+
+footer .a:hover {
+	color: #fff;
+}
+
+.a:hover:after {
+	left: 0;
+	width: 100%;
+}
+
+.screen-height {
+	min-height: calc(100vh - 10rem);
+}
+
+h1 {
+	font-size: 2rem;
+	font-weight: normal;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	line-height: 1;
+}
+
+h1:first-child {
+	margin-top: 0;
+}
+
+section {
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	box-sizing: border-box;
+}
+
+@media (max-width: 767px) {
+
+	.text-image {
+		flex-flow: column;
+		padding-top: 2rem;
+		padding-bottom: 2rem;
+	}
+
+	.text-image > div {
+		width: 100%;
+		padding: 0.5rem;
+	}
+
+	.text-image img {
+		padding: 0;
+	}
+
+	.pricing-table .plans {
+		flex-flow: column;
+	}
+
+	.pricing-table .plans > div {
+		width: 100%;
+		margin: 0.5rem;
+	}
+
+	.pricing-table .info {
+		margin-bottom: 2rem;
+	}
+
+	footer nav {
+		flex-flow: column;
+	}
+
+	footer nav a {
+		margin: 0.5rem;
+	}
+
+	footer {
+		min-height: 14rem;
+	}
+
+	body {
+		padding-top: 4rem;
+	}
+
+	header .logo img {
+		width: 120px;
+	}
+
+	header {
+		min-height: 4rem;
+	}
+
+	header nav {
+		position: fixed;
+		left: 0;
+		top: 0;
+		overflow-y: auto;
+		min-height: 100vh;
+		flex-flow: column;
+		align-items: start;
+		justify-content: start;
+		background: #fff;
+		width: 100%;
+		z-index: 2;
+		transition: left 0.3s ease-out;
+	}
+
+	header nav.closed {
+		left: -100%;
+	}
+
+	header a[href] {
+		margin: 0.5rem 1rem;
+		color: #000;
+	}
+
+	header a.logo {
+		margin: 0;
+	}
+
+	header nav .close {
+		display: flex;
+	}
+
+	header nav .close a {
+		color: #000;
+	}
+
+	header .nav-trigger {
+		display: block;
+	}
+
+	.screen-height > .container > .text-image, .screen-height > .container > .text-image > div {
+		padding: 0;
+	}
+}
