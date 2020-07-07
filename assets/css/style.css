@@ -13,7 +13,9 @@ body {
 
 html {
 	font-size: 17px;
-	font-family: 'Roboto', sans-serif;
+/*	font-family: 'Gilroy', sans-serif;*/
+	font-family: 'Gilroy';
+	font-weight: 300;
 	line-height: 1.6;
 }
 
@@ -224,7 +226,7 @@ li {
 .pricing-table .plans {
 	display: flex;
 	flex-flow: row;
-	align-items: center;
+	align-items: stretch;
 	justify-content: center;
 	width: 100%;
 }
@@ -238,8 +240,17 @@ li {
 	-padding: 50px 2rem;
 	padding-top: 4rem;
 	padding-bottom: 4rem;
-	text-align: center;
+	-text-align: center;
 	box-sizing: border-box;
+
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.pricing-table .plans > div.recomended {
+	border: 2px dashed rgb(255, 87, 25);
 }
 
 .pricing-table .plans .price-details {
@@ -258,16 +269,17 @@ li {
 .pricing-table .plans .price {
 	font-size: 65px;
 	line-height: 0.8;
-	font-weight: 700;
+	font-weight: 800;
 }
 
 .pricing-table .plans .period {
 	width: 100%;
+	text-align: center;
 }
 
 .pricing-table h2 {
 	font-size: 38px;
-	font-weight: normal;
+	font-weight: 800;
 	margin: 0;
 	line-height: 1;
 	text-align: center;
@@ -280,8 +292,19 @@ li {
 }
 
 .pricing-table p {
+	margin-left: 1rem;
+	margin-right: 1rem;
 	margin-top: 2rem;
 	margin-bottom: 2rem;
+	text-align: left;
+}
+
+.pricing-table .plans p {
+	font-size: 0.9rem;
+}
+
+.pricing-table p + p {
+	margin-top: -2rem;
 }
 
 a.button {
@@ -338,7 +361,7 @@ footer .a:hover {
 
 h1 {
 	font-size: 2rem;
-	font-weight: normal;
+	font-weight: 800;
 	margin-top: 1rem;
 	margin-bottom: 1rem;
 	line-height: 1;
@@ -352,6 +375,26 @@ section {
 	padding-top: 2rem;
 	padding-bottom: 2rem;
 	box-sizing: border-box;
+}
+
+section.video {
+	background-color: rgb(36, 41, 46);
+    background-color: #fff;
+    padding-top: 4rem;
+    padding-bottom: 0rem;
+}
+
+section.video .container {
+	display: flex;
+	flex-flow: row;
+	align-items: center;
+	justify-content: center;
+}
+
+section.video iframe {
+	width: 100%;
+    height: 450px;
+    margin-right: 4rem;
 }
 
 @media (max-width: 767px) {
@@ -373,11 +416,17 @@ section {
 
 	.pricing-table .plans {
 		flex-flow: column;
+		align-items: center;
+	    justify-content: center;
 	}
 
 	.pricing-table .plans > div {
 		width: 100%;
 		margin: 0.5rem;
+	}
+
+	.pricing-table .plans p {
+		font-size: 0.8rem;
 	}
 
 	.pricing-table .info {
@@ -450,5 +499,10 @@ section {
 
 	.screen-height > .container > .text-image, .screen-height > .container > .text-image > div {
 		padding: 0;
+	}
+
+	section.video iframe {
+		margin-right: 0;
+		height: 200px;
 	}
 }
