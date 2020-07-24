@@ -210,7 +210,7 @@ ul {
 .text-image img {
 	width: 500px;
     max-width: 100%;
-    padding-left: 2rem;
+    margin-left: 2rem;
     -padding-right: 2rem;
     box-sizing: border-box;
 }
@@ -496,7 +496,7 @@ section.contacts .feedback-form .send {
 	}
 
 	.text-image img {
-		padding: 0;
+		margin: 0;
 	}
 
 	.pricing-table .plans {
