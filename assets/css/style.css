@@ -321,7 +321,7 @@ li {
 	margin-top: -2rem;
 }
 
-a.button {
+.button {
 	background-color: rgb(255, 87, 25);
 	color: #fff;
 	text-decoration: none;
@@ -331,6 +331,7 @@ a.button {
 	padding-top:15px;
 	border-radius: 5px;
 	display: inline-flex;
+	border: 0;
 }
 
 .a {
@@ -409,6 +410,62 @@ section.video iframe {
 	width: 100%;
     height: 450px;
     margin-right: 4rem;
+}
+
+section.offers-list .container {
+	display: flex;
+	flex-flow: row;
+	justify-content: space-betweenl
+}
+
+section.offers-list ul {
+	display: block;
+	width: 50%;
+	padding-right: 8rem;
+}
+
+section.contacts .layout {
+	display: flex;
+	flex-flow: row;
+	justify-content: space-between;
+}
+
+section.contacts .layout > * {
+	width: 50%;
+	box-sizing: border-box;
+}
+
+section.contacts .layout > *:first-child {
+	margin-right: 2rem;
+}
+
+section.contacts .layout > *:last-child {
+	margin-left: 2rem;
+}
+
+section.contacts .feedback-form > label {
+	display: block;
+	margin-bottom: 1rem;
+	width: 100%;
+}
+
+section.contacts .feedback-form > label > input, .feedback-form > label > textarea {
+	width: 100%;
+	border-radius: 5px;
+	padding: 0.5rem 1rem;
+	box-sizing: border-box;
+	border: 1px solid #ccc;
+}
+
+section.contacts .feedback-form > label > input:focus, .feedback-form > label > textarea:focus {
+	border-color: rgb(255, 87, 25);
+	outline: 0;
+}
+
+section.contacts .feedback-form .send {
+	margin-bottom: 2rem;
+	cursor: pointer;
+	outline: 0;
 }
 
 @media (max-width: 767px) {
@@ -533,4 +590,37 @@ section.video iframe {
 		margin-right: 0;
 		height: 200px;
 	}
+
+	section.offers-list .container {
+		flex-flow: column;
+	}
+
+	section.offers-list ul {
+		padding-right: 0;
+		margin: 0;
+		width: 100%;
+	}
+
+	section.contacts .layout {
+		flex-flow: column;
+	}
+
+	section.contacts .layout > * {
+		width: 100%;
+	}
+
+	section.contacts .layout > *:first-child {
+		margin-right: 0;
+	}
+
+	section.contacts .layout > *:last-child {
+		margin-left: 0;
+	}
+
+	section.contacts .feedback-form .send {
+		width: 100%;
+		box-sizing: border-box;
+		justify-content: center;
+	}
+
 }
