@@ -160,6 +160,20 @@ footer nav a {
 	max-width: 100%;
 }
 
+.product .container {
+	display: flex;
+	flex-flow: row;
+	align-items: center;
+	justify-content: space-between;
+	padding-right: 80px;
+}
+
+.product .description {
+	font-size: 1.8rem;
+	line-height: 1;
+	font-weight: 800;
+}
+
 .text-image {
 	display: flex;
 	flex-flow: row;
@@ -380,7 +394,7 @@ section {
 section.video {
 	background-color: rgb(36, 41, 46);
     background-color: #fff;
-    padding-top: 4rem;
+    padding-top: 0rem;
     padding-bottom: 0rem;
 }
 
@@ -398,6 +412,20 @@ section.video iframe {
 }
 
 @media (max-width: 767px) {
+
+	.product .container {
+		display: flex;
+		flex-flow: column;
+		align-items: center;
+		justify-content: space-between;
+		padding-right: 1rem;
+	}
+
+	.product .description {
+		margin-top: 2rem;
+		font-size: 1.2rem;
+	}
+
 
 	.text-image {
 		flex-flow: column;
